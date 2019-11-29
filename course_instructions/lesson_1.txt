@@ -1,1 +1,76 @@
-Tasks for first lesson
+Tasks for first lesson (L1)
+################################
+
+Learning goals:
+Clone a repository
+Inspect the repository
+Basic introduction to git
+Configuring git
+
+
+1. Create a misu_cookbook repository by cloning from github
+
+git clone https://github.com/annlew/misu_cookbook.git
+
+
+2. Inspect your new repository
+
+Try these commands and read about them in the reference manual
+
+git status
+git diff
+git branch
+git log
+git log lesson_1.txt
+git show 
+git show <commit number>
+git annotate <filene name>
+
+
+3. Read the litterature, references below.
+
+And go through the commands under point 2 again.
+
+
+4. Make guacamole
+
+
+5. Repeat point 2
+
+
+6. Check if you have configured git on your computer
+
+git config --list
+
+
+7. If you have not configured git, set your name, email address and editor
+
+git config --global user.name "Your Name"
+git config --global user.email your.email@somewhere
+git config --global core.editor vim/emacs/other
+
+
+8. Repeat point 6 and try
+
+git config user.name
+git config user.email
+git config core.editor
+
+
+Suggested reading
+------------------
+https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
+
+https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+
+
+Reference/manual
+------------------
+https://git-scm.com/docs
+https://git-scm.com/docs/git#_git_commands
+https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf
+
+
+
+
+
