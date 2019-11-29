@@ -16,7 +16,7 @@ git diff
 git fetch
 git status
 git diff
-
+git diff master origin/master
 
 Once you see the following message, continue to point 3
 
@@ -28,7 +28,7 @@ Once you see the following message, continue to point 3
 
 git pull
 git status
-
+git diff master origin/master
 
 4. When you have finished point 3, open this file again for further instructions 
 
