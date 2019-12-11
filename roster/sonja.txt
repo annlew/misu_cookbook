@@ -1,1 +1,3 @@
 I would like to have one credit point for this GIT course :) 
+
+I would like to learn how to use git easily in practise during my PhD. I know a lot already, technical stuff, but I have not started to use GIT in practise. I know it is a useful tool indeed!
