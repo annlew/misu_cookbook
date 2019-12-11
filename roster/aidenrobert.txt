@@ -1,1 +1,5 @@
 Yes, I would like a course credit!
+
+Git topics wished for:
+- How to properly revert a fork back to a prior state before pull request
+- How to organize a project with several repos under it
