@@ -1,2 +1,7 @@
 I would like to claim a course credit after finishing the workshop
 I would like to know about git checkout
+Feedback
+I made a delicious guacamole
+git restir worked out for me
+I used the vimdiff.
+I have not tried other difftools
