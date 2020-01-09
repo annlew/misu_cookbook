@@ -1,0 +1,83 @@
+Tasks for lesson 4 (L4.2)
+################################
+
+Learning goals:
+Repetition
+Update repository history from remote
+Update repository from remote
+
+The git along will take a break for the holidays and be back in 
+the second week of January. Happy holidays!
+
+
+1. Check the status of your repository
+
+git status
+git diff
+git diff master origin/master
+
+
+2. Download the history from remote repository
+
+git fetch
+git status
+git diff
+git diff master origin/master
+
+Once you see the following message, continue to point 3
+
+   "Your branch and 'origin/master' have diverged,
+   and have 1 and 1 different commits each, respectively.
+     (use "git pull" to merge the remote branch into yours)"
+
+
+3. Update your repository with changes from the remote repository (close this file first)
+
+git pull
+git status
+git diff master origin/master
+
+
+4. When you have finished point 3, open this file again for further instructions
+
+
+
+==== UPDATED INSTRUCTIONS =======
+
+Learning goals:
+getting to know your remote
+publish your changes/push to remote
+
+5. Inspect to history:
+
+git log
+git log --graph
+
+
+6. Inspect the remote repository:
+
+git remote
+git remote -v
+
+
+7. Now it's time to publish your local updates, i.e. push to remote repository. Everyone in the git along will publish their roster file. This means that the remote repository will change with each participant publishing their chnages. If you haven't received a collaboration invitation for the cookbook, send your github username to me and I will add you to the project.
+
+git fetch
+git status
+git diff master origin/master
+git pull
+git status
+git diff master origin/master
+git push origin master
+
+
+8. Continue with 
+
+git fetch
+git status
+git pull
+
+until you have the contributions from all participants. 
+
+NOW I WILL CHECK WHO HAS DONE THEIR HOMEWOK. :)
+
