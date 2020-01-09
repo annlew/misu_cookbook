@@ -1,4 +1,4 @@
-Tasks for lesson 2 (L2.1)
+Tasks for lesson 2 (L2.2)
 ################################
 
 Learning goals:
@@ -9,6 +9,7 @@ Update repository from remote
 
 git status
 git diff
+git diff master origin/master
 
 
 2. Download the history from remote repository
@@ -33,4 +34,118 @@ git diff master origin/master
 4. When you have finished point 3, open this file again for further instructions 
 
 
+==== UPDATED INSTRUCTIONS =======
 
+Learning goals:
+Track changes
+Commit changes
+Tracked vs untracked files
+
+
+5. Go to the folder "roster" and create a .txt file with your name or alias in the filename. Write a note whether you would like to claim a course credit after finishing the workshop. Close the file.
+
+
+6. Do the following sequence and take note of what you see. Read the documentation in the reference manual.
+
+git status
+git diff
+git diff --staged
+git add <filename.txt>
+git status
+git diff
+git diff --staged
+git commit -m "a description of your commit that is informative for other users"
+git status
+git diff
+git diff --staged
+
+
+7. Open your roster file again and write down if there is a specific git topic you would like to learn/try in this workshop. If you can't think of anythin just write "nothing" or similar. Close the file and repeat the sequence from point 6.
+
+
+8. Create a new file called <your_name>.private.txt and write "My private notes" or someting similar in the file. Close the file and do (DO NOT ADD OR COMMIT!)
+
+git status
+git diff
+git diff --staged
+
+
+9. Create a new file called my_mistakes.txt, write "I don't do mistakes" and close the file. Do the following:
+
+git status 
+git diff
+git diff --staged
+rm my_mistakes.txt
+git status
+git diff
+git diff --staged
+
+
+10. Create the file my_mistakes.txt again and write "I do mistakes". Close the file and do
+
+git status
+git diff
+git diff --staged
+git add my_mistakes.txt
+git status
+git diff
+git diff --staged
+
+
+11. Unstage the file (i.e revert the add command). Read the documentation in the reference manual.
+
+git restore --staged my_mistakes.txt
+git status 
+git diff
+git diff --staged
+
+
+12. Stage the file again and see what happens if removed
+
+git add my_mistakes.txt
+git status
+git diff
+git diff --staged
+rm my_mistakes.txt
+git status
+git diff
+git diff --staged
+
+
+13. Remove the file properly
+
+git rm my_mistakes.txt
+git status
+git diff
+git diff --staged
+git log
+
+
+14. Another way of removing a staged file 
+
+git add my_mistakes.txt
+git status
+git diff
+git diff --staged
+rm my_mistakes.txt
+git status
+git diff
+git add my_mistakes.txt
+git status
+git diff
+git diff --staged
+
+
+Interactive git cheat sheet
+--------------------------------
+
+https://ndpsoftware.com/git-cheatsheet.html
+
+
+Reading
+---------------------------------
+
+https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
+https://coderefinery.github.io/git-intro/04-staging-area/
+https://coderefinery.github.io/git-intro/02-basics/
+https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Basic-Snapshotting

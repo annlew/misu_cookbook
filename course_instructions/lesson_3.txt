@@ -1,0 +1,122 @@
+Tasks for lesson 3 (L3.2)
+################################
+
+Learning goals:
+Repetition
+Update repository history from remote
+Update repository from remote
+
+1. Check the status of your repository
+
+git status
+git diff
+git diff master origin/master
+
+
+2. Download the history from remote repository
+
+git fetch
+git status
+git diff
+git diff master origin/master
+
+Once you see the following message, continue to point 3
+
+   "Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+      (use "git pull" to update your local branch)"
+
+
+3. Update your repository with changes from the remote repository (close this file first)
+
+git pull
+git status
+git diff master origin/master
+
+4. When you have finished point 3, open this file again for further instructions 
+
+
+==== UPDATED INSTRUCTIONS =======
+
+Learing goals:
+Ignoring files
+Configuring difftool
+Repetition of stage and commit in local repository
+
+
+5. What happened with the status of your <your_name>.private.txt after point 3 (after git pull)? Open the file .gitignore (hidden file in top directory in this repository) that was distributed together with the update of this file.
+
+
+6. Open your roster file (roster/yourname.txt) and add a headline "Feedback" and write "Your instruction in L1 about making guacamole made no sense at all" or "I made a delicious guacmole from the recipe in the MISU cookbook". Close the file. Do not add or commit.
+
+
+7. Configure a difftool. CodeRefinery shows an example with meld (Windows and Linux) and opendiff (Mac). I use the editor vim and prefer vimdiff, but there are many other file comparison software around.
+
+Try different difftools:
+git difftool --tool=meld 
+git difftool --tool=vimdiff
+git difftool --tool=other?
+
+Configure difftool:
+
+git config --global diff.tool your_preferred_difftool 
+
+Inspect the changes:
+
+git difftool
+
+
+8. Stage the changes you made in your roster file
+
+git add yourname.txt
+
+
+9. Inspect the changes
+
+git difftool
+git difftool --staged
+
+
+10. Open your roster file and add a comment on whether "git restore" worked out for you or not. Close the file and inspect:
+
+git status
+git difftool 
+git difftool --staged
+git difftool master origin/master
+git add
+git status
+git difftool 
+git difftool --staged
+git difftool master origin/master
+
+11. Add a note on which difftool you chose in your roster file. Did you find other alternatives than those suggested here?
+
+git status
+git difftool
+git difftool --staged
+git difftool master origin/master
+git add
+git status
+git difftool
+git difftool --staged
+git difftool master origin/master
+
+
+12. Commit the staged changes to your local repository
+
+git status
+git commit -m "a description of your commit that is informative for other users" 
+git difftool
+git difftool --staged
+git difftool master origin/master
+
+
+Reading
+---------------------------------
+
+https://git-scm.com/docs/gitignore
+https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository (Ignoring Files)
+https://coderefinery.github.io/git-intro/02-basics/#ignoring-files-and-paths-with-gitignore
+
+https://coderefinery.github.io/git-intro/02-basics/#optional-exercise-visual-diff-tools
+https://git-scm.com/docs/git-difftool
+https://coderefinery.github.io/installation/difftools/
