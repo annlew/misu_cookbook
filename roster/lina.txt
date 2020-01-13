@@ -1,0 +1,9 @@
+I would like to claim course credit for this course, thank you!!
+
+I would like to learn more about how to use branches efficient
+
+FEEDBACK:
+I do not understand the command git diff master origin/master
+
+GIT RESTORE:
+Git restore did not work out for me at first since the command did not exist for my git version, but after installing the lastest version of git, it worked (I think)
