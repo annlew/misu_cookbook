@@ -1,4 +1,4 @@
-Tasks for lesson 5 (L5.1)
+Tasks for lesson 5 (L5.2)
 ################################
 
 Learning goals:
@@ -36,3 +36,55 @@ git diff master origin/master
 
 4. When you have finished point 3, open this file again for further instructions
 
+
+==== UPDATED INSTRUCTIONS =======
+
+Learning goals:
+Recap
+Interacting with remote repository
+Introduction to distributed workflow
+
+
+We will stop here briefly to give everyone time to catch up (i.e. push their changes/publish) and go through what happened in the last lesson (L4). This lesson will focus on reading and inspecting the repository.
+
+Tasks:
+
+1. Keep an eye on the repository and fetch and pull when you see that someone has published their roster file.
+
+
+2. Take a look at the commit messages in the repository, both your own and those from other participants' commits. Do you feel that your commit messages are helpful for other contributors for understanding the history of the cookbook and your contributions? Can you take any inspiration from other contributors' commit messages?
+
+
+3. Go to: https://github.com/annlew/misu_cookbook/network
+Have a look at the graph illustrating the development of the repositry (you can drag the graph to see the full history). What do the different lines/colours in the graph represent? Can you follow my lesson updates through the graph? When are the lines in the graph diverging? When are they converging?
+
+
+4. In L1-L3 you were working with and updating you local clone of the misu cookbook repository (i.e. creating, tracking and changing files, as well as commiting changes in your local repository). In L4 you started to interact with the remote repository (from where you cloned your local repository): 
+https://github.com/annlew/misu_cookbook.git
+
+Check this with:
+git remote -v
+git remote show origin
+
+This is what your clone regards as "origin". At this stage we have only one version of the cookbook (code), i.e. one branch, which is referred to as the "master". We have one master in the remote repository "origin/master", and every participant a corresponding "master" in their local repository. Every participant's local master is connected to the "origin/master".
+
+With: 
+
+git diff master origin/master
+
+you compare the master branch in the remote repository (origin/master) with the master in your local repository. When should the origin/master and master be different? How does the result of "git diff master origin/master" change after fetch, pull, commit and push?
+
+
+In the following lessons we will look closer at branching, remotes and distributed workflow, so don't worry if this all seems very confusing at the moment.
+
+
+
+Reading
+---------------------------------
+
+https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project
+https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches
+https://git-scm.com/docs/git-push
+https://git-scm.com/docs/git-fetch
+https://git-scm.com/docs/git-remote
