@@ -67,7 +67,6 @@ https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 Reference/manual
 ------------------
 https://git-scm.com/docs
-https://git-scm.com/docs/git#_git_commands
 https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf
 
 
