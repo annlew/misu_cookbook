@@ -1,4 +1,4 @@
-Yes, I would like a course credit!
+Yes, I could totally use a credit
 
 Git topics wished for:
 - How to properly revert a fork back to a prior state before pull request
@@ -6,7 +6,7 @@ Git topics wished for:
 
 Feedback:
 I made a delicious guacamole from the recipe in the MISU cookbook.
-I had to force an upgrade to git 2.24.1 in order to get git restore to work.
+I had to force an upgrade to git 2.24.1 in order to get git restore to work
 
 I'm using meld for now, but I installed Kompare, which works well and has a directory explorer.
 Colordiff is nice for command line based comparisons
