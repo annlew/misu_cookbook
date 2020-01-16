@@ -1,0 +1,6 @@
+Feedback
+Your instruction in L1 about making guacamole made no sense at all
+git restore did not work...
+I used opendiff as difftool
+No course credits, thank you
+Nothing

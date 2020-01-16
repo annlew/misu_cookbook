@@ -82,7 +82,7 @@ git status
 git difftool 
 git difftool --staged
 git difftool master origin/master
-git add
+git add yourname.txt
 git status
 git difftool 
 git difftool --staged
@@ -94,7 +94,7 @@ git status
 git difftool
 git difftool --staged
 git difftool master origin/master
-git add
+git add yourname.txt
 git status
 git difftool
 git difftool --staged
