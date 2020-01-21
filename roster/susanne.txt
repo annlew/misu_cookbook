@@ -7,3 +7,10 @@ When I added my course credit information to my file and did git diff --staged, 
 
 Specific topic:
 I would like to learn how to go back in time and find code changes that happened a while ago, e.g., to find a mistake and correct it.
+
+Feedback:
+Your instruction in L1 about making guacamole made no sense at all
+
+"git restore" worked out for me!
+
+I used Meld. Didn't look for alternatives.
