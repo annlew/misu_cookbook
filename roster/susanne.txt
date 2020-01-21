@@ -1,1 +1,9 @@
 I would like to get course credit.
+
+Question:
+When I added my course credit information to my file and did git diff --staged, why was there a b in front of the file name:
+--- /dev/null
++++ b/roster/susanne.txt
+
+Specific topic:
+I would like to learn how to go back in time and find code changes that happened a while ago, e.g., to find a mistake and correct it.
