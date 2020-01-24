@@ -1,4 +1,4 @@
-Tasks for lesson 5 (L6.1)
+Tasks for lesson 6 (L6.2)
 ################################
 
 Learning goals:
@@ -35,4 +35,160 @@ git diff master origin/master
 
 
 4. When you have finished point 3, open this file again for further instructions
+
+
+==== UPDATED INSTRUCTIONS =======
+
+Learning goals:
+Recap
+The diff output
+Unstaging files
+Inspect history
+Push to remote
+
+
+Thanks everyone for your contributions! We now have some interesting things to look into together :)
+
+5. Susanne had a question about the git diff ouput format. She noticed a "b" in her diff output. Let's have a look at this. 
+
+N.B. during this exercise you will create a file "my_patch.txt" that should NOT be commited or be pushed to the github repository. Some of you pushed files to the repository which were not intended to be published according to the instructions. Bonus excersie for you: make sure that your "my_patch.txt" does not show up on github.
+
+Do:
+
+git status
+git diff
+git diff --staged
+
+Create a file called my_patch.txt. 
+
+git status
+git diff 
+git diff --staged
+
+What does the output look like? Can you find the "b" Susanne had noticed? Can you find an "a" also?
+
+Continue with:
+
+git add my_patch.txt
+git status
+git diff
+git diff --staged
+
+How did the diff output change after staging the file?
+
+Now, unstage the file to avoid that it will be included in your next commit:
+
+git restore --staged my_mistakes.txt
+git status
+git diff
+git diff --staged
+
+Read chapter 11 of the git pocket guide (listed in the reading suggestions).
+
+
+6. As mentioned under point 5, some of you commited and pushed files that I hadn't expected to appear on github, but this is excellent! First, I want to emphasise that I am not listing these files here because you who pushed these file have done anything wrong or that you failed the exercise. On the contrary, this is exacly why we are learning git and version control and you have now set up a great learning situation. Let's see what happened.
+
+Antonios decided that he wanted to share his private notes with us. We should all have a file:
+
+antonios.private.txt
+
+If we do:
+
+git log antonios.private.txt
+
+Then, do:
+
+git show <commit>
+
+where <commit> is the commit number of the commit where antonios.private.txt was added, which you get from git log.
+
+Do you recognise the git show output from the exercise under point 5 above? What does this tell you?
+
+
+7. All of you should have a name.private.txt in your local repository. What happens when you do:
+
+git add name.private.txt
+
+Force your name.private.txt to be staged/added. How would you do that?
+
+REPETITION!! Unstage name.private.txt REPETITION!!
+
+git restore --staged name.private.txt
+
+
+8. Did Antonios do the first part of point 7 already on 7th of January?
+
+Do:
+
+git diff <commit>
+
+where <commit> is the commit number from point 6 above. This will give you the difference between <commit> and the current version. 
+
+Now check the history of .gitignore
+
+git log .gitignore
+
+When was .gitignore commited? Now, let's have a look att the full commit history:
+
+git log
+
+This gives a lot of information. Let's find Antonios' commits:
+
+git log --committer=antdi
+
+And now do:
+
+git show <commit>:.gitignore
+
+Antonios also did a merge on 7th of January. Repeat the command above, but change the commit number to that of the merge.
+
+And finally, look at the difference between the two commits that Antonios did on the 7th on January:
+
+git diff <commit1> <commit2>
+
+What is your answer to the question? Did Antonios do the first part of point 7 already on 7th of January?
+
+Add a line in your roster file with your answer and publish. Fetch, pull, stage, commit, push!
+
+git fetch
+git status
+git diff master origin/master
+git pull
+git status
+git add yourname.txt
+git diff
+git diff --stages 
+git diff master origin/master
+git commit -m "an informative description of your commit"
+git diff
+git diff --stages
+git diff master origin/master
+git push origin master
+
+
+9. Continue with 
+
+git fetch
+git status
+git pull
+
+until you have the contributions from all participants.
+
+
+
+
+
+Reading
+---------------------------------
+
+
+https://www.oreilly.com/library/view/git-pocket-guide/9781449327507/ch11.html
+https://stackoverflow.com/questions/6764953/what-is-the-reason-for-the-a-b-prefixes-of-git-diff
+https://git-scm.com/docs/git-log
+https://git-scm.com/docs/git-diff
+https://git-scm.com/docs/git-show
+
+
+
+
 
