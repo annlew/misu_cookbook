@@ -16,7 +16,4 @@ Your instruction in L1 about making guacamole made no sense at all
 I used Meld. Didn't look for alternatives.
 
 The Antonios riddle:
-I think that Antonios create, added and committed the private file before he had seen the update L3 instructions. 
-
-The Antonios riddle:
 I think that Antonios created and added the private file before he had seen the updated L3 instructions. My guess is that he oversaw the instruction to not add the file in the L2 instructions. And that he didn't update his local repository when he started working on L3 on Jan 7, so that he missed the updated instructions for L3 at first. Later on, he merged the branches and there the .gitignore file exists, so at that point he must have seen the updated L3 instructions and edited the .gitignore file to not include his private file. But at that point, his private file had already been added to git, so was already tracked. Could that be?
