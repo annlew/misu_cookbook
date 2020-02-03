@@ -5,3 +5,4 @@ I made a delicious guacamole
 git restir worked out for me
 I used the vimdiff.
 I have not tried other difftools
+On the 7th of January I have done two commits. In the first one I have made a wrong "git add" to the "antonios.private.txt" file. Then in the next commit I downloaded from the remore repo the .gitignore file. I think that the reason why the file was uploaded to the remore repo is that it was added and committed to my local repo. In addition the .gitignore file was introduced after I have added the file. 
