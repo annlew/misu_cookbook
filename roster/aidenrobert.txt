@@ -10,3 +10,6 @@ I had to force an upgrade to git 2.24.1 in order to get git restore to work
 
 I'm using meld for now, but I installed Kompare, which works well and has a directory explorer.
 Colordiff is nice for command line based comparisons
+
+- The Antonio Scenario -
+It looks like Antonio's file was committed while performing the tasks in updated L3 because there was no .gitignore file, since when attempting to view the first 7 January commit's .gitignore file using git show <commitno>:.gitignore, it gives "fatal: Path '.gitignore' exists on disk, but not in <commitno>”. Doing the same for the second 7 January commit shows that '*private.txt' is the content of that commit's .gitignore file.
