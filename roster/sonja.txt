@@ -16,5 +16,7 @@ git reset HEAD <filename> to unstage a staged file
 
 I found the vimdiff as clearest editor, since I am using vim as an editor myself. I did not try other editors.
 
+Antonios problem:
+I think he must have had the old instructions when working with L3, so that he staged and committed the private text file without modifying the .gitignore file. Later on he noticed that he had pushed his private file to the remote repository, and then changed the *private.txt into his repository, but at that point the private file was already in the remote one. 
 
 
