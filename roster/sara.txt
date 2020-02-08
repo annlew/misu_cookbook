@@ -4,3 +4,6 @@ I dont need a credit, but I'm not sad for getting a credit.
 How to do when a commit was wrong and you need to go back one version
 Git restore did not work at first because I had an old version of git, but with an updated version it worked.
 I choosed to use opendiff as difftool, since I've been using it before. 
+
+Antonios file:
+I think he had the not updated instructions of L3 and continued working and thus missed the instructions that made you not adding the private file. 
