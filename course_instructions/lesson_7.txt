@@ -1,4 +1,4 @@
-Tasks for lesson 7 (L7.1)
+Tasks for lesson 7 (L7.2)
 ################################
 
 Learning goals:
@@ -35,3 +35,115 @@ git diff master origin/master
 
 
 4. When you have finished point 3, open this file again for further instructions
+
+
+==== UPDATED INSTRUCTIONS =======
+
+Learning goals:
+Recap
+Inspect history
+Push to remote
+Revert changes
+
+
+5. In the previous lesson (L6) we inspected Antonios' private notes. It seems that we all agree on whathappened with "antonios_private.txt". This time we will focus on Lina's and Sara's "mistakes". We all created a file "my_mistakes.txt" in L2. My plan was that everyone would unstage this file so that this file would not be included in the next commit (I will have to go back and check if I had another guacamole moment here...). Both Lina and Sara committed "my_mistakes.txt" and thus, committed chages to the same file. Let's look:
+
+git log my_mistakes.txt
+
+git show <Lina's_commit_number>
+
+git show <Sara's_commit_number>
+
+What is the difference between the commits they made? Did Sara overwrite Lina's confession that she continues to do mistakes?
+
+
+6. Lina was not happy with the guacamole recipe:
+
+git log guacamole_ingredients.txt
+git log guacamole_instructions.txt
+
+git show <Lina's_guacamole_commit1>
+git show <Lina's_guacamole_commit2>
+git show <Anna's_guacamole_commit>
+
+Looks like she is planning a big party. However, I was not planning to share my guacamole with anyone.
+
+
+7. It's time to tidy up. Antonios should not have to share his private notes with everyone, and we will remove Lina's and Sara's mistakes.
+
+Now, you will get individual assignments. I will post issues on github and assign each task to one of you.
+
+Tasks (NB! individual assignments):
+
+7.1 Remove Antonios' antonios.private.txt from the repository:
+    
+    git fetch
+    git pull
+    git rm antonios.private.txt
+    git status
+    git diff --staged
+    git commit -m "an informative description of your commit"
+    git push origin master 
+
+
+7.2 Remove Lina's and Sara's mistakes:
+
+    git fetch
+    git pull
+    git rm my_mistakes.txt
+    git status
+    git diff --staged
+    git commit -m "an informative description of your commit"
+    git push origin master
+
+
+7.3 Restore the guacamole to the original version. First the ingredients:
+
+    git fetch
+    git pull
+    git checkout <Anna's_guacamole_commit> guacamole_ingredients.txt
+    git status
+    git diff --staged
+    git commit -m "an informative description of your commit"
+    git push origin master
+
+7.4 Then, restore the instructions:
+
+    git fetch
+    git pull
+    git checkout <Anna's_guacamole_commit> guacamole_instructions.txt
+    git status
+    git diff --staged
+    git commit -m "an informative description of your commit"
+    git push origin master
+
+
+7.5 And finally, bring back antonios_private.txt, but keep it untracked locally:
+
+    git log antonios.private.txt
+    git checkout e579f25 antonios.private.txt
+    git restore --staged antonios.private.txt
+    git status
+
+
+8. Task for everyone:
+
+git fetch
+git pull
+git log
+
+
+
+Reading
+---------------------------------
+
+https://git-scm.com/docs/git-rm
+https://git-scm.com/docs/git-checkout
+https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things
+
+
+
+
+
+
+
