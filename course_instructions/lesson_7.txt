@@ -120,6 +120,8 @@ Tasks (NB! individual assignments):
 
 7.5 And finally, bring back antonios_private.txt, but keep it untracked locally:
 
+    git fetch
+    git pull
     git log antonios.private.txt
     git checkout e579f25 antonios.private.txt
     git restore --staged antonios.private.txt

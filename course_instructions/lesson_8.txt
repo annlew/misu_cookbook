@@ -1,4 +1,4 @@
-Tasks for lesson 8 (L8.1)
+Tasks for lesson 8 (L8.2)
 ################################
 
 Learning goals:
@@ -35,3 +35,160 @@ git diff master origin/master
 
 
 4. When you have finished point 3, open this file again for further instructions
+
+
+==== UPDATED INSTRUCTIONS =======
+
+Learning goals:
+Recap
+Creating branches
+Switching between branches
+
+
+5. A "my_patch.txt" has showed up in the remote repository from L6! I notices that I hade made this an unintentional trick question. Now we have a bonus cleaning exercise! Who committed "my_patch.txt"? 
+
+git log my_patch.txt
+
+git log lesson_6.txt
+
+
+Tasks (NB! individual assignments):
+
+5.1 Remove "my_patch.txt" from the repository:
+
+    git fetch
+    git pull
+    git rm my_patch.txt
+    git status
+    git diff --staged
+    git commit -m "an informative description of your commit"
+    git push origin master
+
+
+5.2 Open an issue on github and assign the my_patch.txt author task 5.3 and do the following:
+
+    git fetch
+    git pull
+
+    Add a line in your <yourname>.txt describing what my mistake was in L6.
+    
+    git add <yourname>.txt
+    git commit -m "an informative description of your commit"
+    git push origin master
+
+
+5.3 Bonus exercise for the "my_patch.txt" author:
+
+    git status
+    git diff
+    git diff --staged
+
+    Create a file called my_patch2.txt.
+
+    git status
+    git diff
+    git diff --staged
+
+    Continue with:
+
+    git add my_patch2.txt
+    git status
+    git diff
+    git diff --staged
+
+    Now, unstage the file to avoid that it will be included in your next commit:
+
+    git restore --staged my_patch2.txt
+   
+    If this doesn't work use:
+    git reset HEAD my_patch2.txt
+
+    git status
+    git diff
+    git diff --staged
+
+    git fetch
+    git pull
+
+    Add a line in the <yourname>.txt with "I did not commit my_patch2.txt"
+
+    git add <yourname>.txt
+    git commit -m "an informative description of your commit"
+    git push origin master
+
+
+6.  Task for everyone:
+
+    git fetch
+    git pull
+    git log
+
+
+7. Now we will start creating the cookbook. Each of you will be responsible for one chapter where we will collect related recipes and similar. Each chapter will have its own branch. First we check existing branches:
+
+git branch
+git status
+
+Now, create your branch for your cookbook chapter:
+
+git branch Your_chapter_name
+git branch
+git status
+
+How is the output from "git branch" different from before you created "Your_chapter_name"? Now, do:
+
+git checkout Your_chapter_name
+git branch
+git status
+
+How is the output from "git branch" different this time? What does "git status" tell you about branches?
+
+
+8. We will now also ponder upon HEAD....
+
+......
+
+Where do you find HEAD in the output from:
+
+git log -n 2
+
+Switch branch again:
+
+git checkout master
+git branch
+git status
+git log -n 2
+
+What happened with HEAD?
+
+.........
+......................................
+..................
+
+
+Read the introduction to branches in the git book again.
+
+.........................................
+.................
+
+
+
+9. Switch back to your newly created chapter branch.
+
+
+10. Publish your branch:
+
+git push origin Your_chapter_name
+
+
+
+
+
+
+
+Reading
+---------------------------------
+
+https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
+https://git-scm.com/docs/git-branch
+https://git-scm.com/docs/git-checkout

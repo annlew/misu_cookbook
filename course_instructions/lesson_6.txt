@@ -78,7 +78,7 @@ How did the diff output change after staging the file?
 
 Now, unstage the file to avoid that it will be included in your next commit:
 
-git restore --staged my_mistakes.txt
+git restore --staged my_patch.txt
 git status
 git diff
 git diff --staged
