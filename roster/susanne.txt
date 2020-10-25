@@ -17,3 +17,6 @@ I used Meld. Didn't look for alternatives.
 
 The Antonios riddle:
 I think that Antonios created and added the private file before he had seen the updated L3 instructions. My guess is that he oversaw the instruction to not add the file in the L2 instructions. And that he didn't update his local repository when he started working on L3 on Jan 7, so that he missed the updated instructions for L3 at first. Later on, he merged the branches and there the .gitignore file exists, so at that point he must have seen the updated L3 instructions and edited the .gitignore file to not include his private file. But at that point, his private file had already been added to git, so was already tracked. Could that be?
+
+Why did Sara commit my_patch.txt?
+The instructions in L6 said to first create, then change and add the file my_pathc.txt. Afterwards, we unstaged it. But the file was still hanging around as a changed, tracked file. Maybe Anna should also have included commands how to remove an unwanted file from the tracking at this point. It could be that Sara staged and committed all changed files (including the my_patch.txt) later in L6 after she had worked on the Antonios riddle.
