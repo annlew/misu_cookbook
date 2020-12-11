@@ -37,6 +37,56 @@ git diff master origin/master
 4. When you have finished point 3, open this file again for further instructions
 
 
+==== UPDATED INSTRUCTIONS =======
+
+
+Learning goals:
+Repetition branches
+Switching between branches
+Repetition commit
+
+5. Your branch and master should now be syncronised (i.e. everythin in master also exists in your branch, plus your branch specific changes). I have seen a lot of delicious recepies in GitHub, however, some of you have branches that do not contain any recipies yet. Now everyone will add a recipe to your branch.
+
+
+Make sure you are on your branch:
+
+git branch
+
+Switch to your branch (if you are not already on the correct branch)
+
+git checkout Your_chapter_name
+git branch
+
+6. First let's make sure your branch is up to date with master
+
+git merge master
+
+
+7. Add a recipe. If you haven't already created a folder for your recipies, do that first.
+
+git status
+
+Add your changes, commit with an informative message and push your new recipe to the remote.
+
+Publish your new recipe:
+
+git push origin Your_branch_name
+
+
+Reading
+---------------------------------
+
+https://git-scm.com/docs/git-push
+https://git-scm.com/docs/git-branch
+https://git-scm.com/docs/git-checkout
+https://git-scm.com/docs/git-remote
+
+https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches
+
+
+
+
+
 
 
 
