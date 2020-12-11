@@ -1,0 +1,104 @@
+Tasks for lesson 9 (L9.2)
+################################
+
+Learning goals:
+Repetition
+Update repository history from remote
+Update repository from remote
+
+
+1. Check the status of your repository
+
+git status
+git diff
+git diff master origin/master
+
+
+2. Download the history from remote repository
+
+git fetch
+git status
+git diff
+git diff master origin/master
+
+Once you see the following message, continue to point 3
+
+   "Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+      (use "git pull" to update your local branch)"
+
+
+3. Update your repository with changes from the remote repository (close this file first)
+
+git pull
+git status
+git diff master origin/master
+
+
+4. When you have finished point 3, open this file again for further instructions
+
+
+==== UPDATED INSTRUCTIONS =======
+
+Learning goals:
+Switching between branches
+Inspect remote branch
+
+
+5. We have seven new branches in the repository now and a lot of delicious recipies to look forward to! Each of you should have one branch locally and a corresponding remote branch. Let's have a look!
+
+List all local branches:
+git branch
+
+List all remote branches:
+git branch -r
+
+List all braches:
+git branch -a
+
+Check the relationship between your local branches and remote branches:
+git remote show origin
+
+What information do you find about master and your own branch?
+
+
+6. Swith to your own branch
+
+git checkout Your_branch_name
+git branch
+
+Make a folder with a name that describes your recipes. Add a recipe in a text file in this folder. Then do:
+
+git status
+
+Add your changes, commit with an informative message and push your new recipe to the remote.
+
+First try:
+git push origin
+
+What message do you get?
+
+Now, do:
+
+git push origin Your_branch_name
+
+
+
+Reading
+---------------------------------
+
+https://git-scm.com/docs/git-push
+https://git-scm.com/docs/git-branch
+https://git-scm.com/docs/git-checkout
+https://git-scm.com/docs/git-remote
+
+https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches
+
+
+
+
+
+
+
+
+
+
