@@ -1,4 +1,4 @@
-Tasks for lesson 12 (L12.1)
+Tasks for lesson 12 (L12.2)
 ################################
 
 Learning goals:
@@ -37,6 +37,66 @@ git diff master origin/master
 4. When you have finished point 3, open this file again for further instructions
 
 
+==== UPDATED INSTRUCTIONS =======
+
+
+Learning goals:
+Check out remote branch
+
+5. Now everyone should have at least one recipe in their chapter branch and it's time to start switch recipes! (If you haven't uploaded a recipe it's time you do this now!)
+
+6. First we update all branches with the updates from the master as in last lesson
+
+git branch
+
+Switch to your branch (if you are not already on the correct branch)
+
+git checkout Your_chapter_name
+git branch
+
+git merge master
+
+
+7. Each one of you should check out someone else's chapter with recipes. I have created a list of issues on Github with assignments for each one of you.
+
+First, check all the local branches:
+
+git branch
+
+Check all branches, both local and remote:
+
+git branch -a
+
+And check the relationship between your local branches and remote branches:
+
+git remote show origin
+
+Now check out the remote chapter branch you have been assigned:
+
+git checkout Chapter_branch_name
+
+And repeat the sequence of commands above:
+
+git branch
+git branch -a
+git remote show origin
+
+8. If the checkout was succesful, close the issue you have been assigned on Github.
+
+9. Cook something nice using your new recipe collection. Take notes on what modifications you did to the recipe. We will use that for upcoming lessons :) 
+
+
+
+
+Reading
+---------------------------------
+
+https://git-scm.com/docs/git-push
+https://git-scm.com/docs/git-branch
+https://git-scm.com/docs/git-checkout
+https://git-scm.com/docs/git-remote
+
+https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches
 
 
 
