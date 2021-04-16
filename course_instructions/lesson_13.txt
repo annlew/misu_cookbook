@@ -1,4 +1,4 @@
-Tasks for lesson 13 (L13.1)
+Tasks for lesson 13 (L13.2)
 ################################
 
 Learning goals:
@@ -63,7 +63,7 @@ git checkout Friends_branch_name
 Make some modification to a recipe, add and commit
 
 git add changed_file
-git commit "<Your name> made a change to <Friend_name> recipe"
+git commit -m "<Your name> made a change to <Friend_name> recipe"
 
 8. Push the modified file to the remote
 
