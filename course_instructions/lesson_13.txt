@@ -58,7 +58,7 @@ git merge master
 
 7. Checkout the branch that you will make changes to, i.e. your friend's branch
 
-git checkout Friends_branch_name
+git checkout <Friends_branch_name>
 
 Make some modification to a recipe, add and commit
 
@@ -67,14 +67,14 @@ git commit -m "<Your name> made a change to <Friend_name> recipe"
 
 8. Push the modified file to the remote
 
-git push origon Friends_branch_name
+git push origin <Friends_branch_name>
 
 
 9. Now check what changes your friend made to your recipe
 
-git checkout <Your branch>
+git checkout <Your_branch>
 git fetch
-git pull
+git pull origin <Your_branch>
 git log -n 5
 
 

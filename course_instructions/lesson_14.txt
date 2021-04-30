@@ -1,4 +1,4 @@
-Tasks for lesson 14 (L14.1)
+Tasks for lesson 14 (L14.2)
 ################################
 
 Learning goals:
@@ -37,10 +37,93 @@ git diff master origin/master
 4. When you have finished point 3, open this file again for further instructions
 
 
+==== UPDATED INSTRUCTIONS =======
 
 
+Learning goals:
+Resolve merge conflict
+
+5. Now we will create a merge conflict. Let's begin a cooking battle. We repeat the procedure from last lesson (L13) 
+
+6. First we update all branches with the updates from the master as in last lessons
+
+git branch
+
+Switch to your branch (if you are not already on the correct branch)
+
+git checkout Your_chapter_name
+git branch
+
+git merge master
 
 
+7. Checkout the branch that you will make changes to, i.e. your friend's branch
+
+git checkout <Friends_branch_name>
+
+Make some modification to a recipe, add and commit
+
+git add changed_file
+git commit -m "<Your name> messed up <Friend_name> recipe"
+
+8. Push the modified file to the remote
+
+git push origin <Friends_branch_name>
+
+
+9. Here we start the battle. Check what changes your "friend" made to your recipe.
+
+NB DO NOT PULL!
+
+git fetch
+git diff <Your_branch> origin/<Your_branch>
+
+if that doesn't work try
+
+git diff <Your_branch>...origin/<Your_branch>
+
+This should tell you what change your friend did, file name and line number.
+
+NB DO NOT PULL!
+
+10. Make your strike: edit whatever you currently have in the file your friend changed, on the same line as the friend's change. then, commit your change.
+
+git add changed file
+git commit -m "<Your name> rescuing recipe"
+
+11. Now pull chnages from remote
+git pull origin <Your_branch>
+
+12. Oh oh... merge conflict!
+
+13. Resolve merge conflict: Open the file containing the conflict and edit: Remove the change you are not happy with and 
+<<<<<<< HEAD
+friends mods
+=======
+your mods
+>>>>>>> <commit number>
+
+close file
+
+git status
+git add file
+git status
+git commit -m "<Your name> solves merge conflict in <Your branch>"
+git status
+
+14. Push the correct version to remote
+
+git push origin <Your branch>
+
+15. Phew.....
+
+Reading
+---------------------------------
+
+https://git-scm.com/docs/git-push
+https://git-scm.com/docs/git-branch
+https://git-scm.com/docs/git-checkout
+https://git-scm.com/docs/git-remote
 
 
 
