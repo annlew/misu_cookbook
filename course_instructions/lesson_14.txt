@@ -48,18 +48,20 @@ Resolve merge conflict
 6. First we update all branches with the updates from the master as in last lessons
 
 git branch
+git checkout master
+git pull
 
-Switch to your branch (if you are not already on the correct branch)
+Switch to your branch 
 
 git checkout Your_chapter_name
 git branch
-
 git merge master
 
 
 7. Checkout the branch that you will make changes to, i.e. your friend's branch
 
 git checkout <Friends_branch_name>
+git pull
 
 Make some modification to a recipe, add and commit
 
@@ -75,6 +77,7 @@ git push origin <Friends_branch_name>
 
 NB DO NOT PULL!
 
+git checkout <Your_branch>
 git fetch
 git diff <Your_branch> origin/<Your_branch>
 
@@ -86,22 +89,22 @@ This should tell you what change your friend did, file name and line number.
 
 NB DO NOT PULL!
 
-10. Make your strike: edit whatever you currently have in the file your friend changed, on the same line as the friend's change. then, commit your change.
+10. Make your strike: edit whatever you currently have in the file your friend changed, on the same line as your friend's change. Then, commit your change.
 
 git add changed file
-git commit -m "<Your name> rescuing recipe"
+git commit -m "<Your name> impriving my recipe"
 
-11. Now pull chnages from remote
+11. Now pull changes from remote
 git pull origin <Your_branch>
 
 12. Oh oh... merge conflict!
 
-13. Resolve merge conflict: Open the file containing the conflict and edit: Remove the change you are not happy with and 
-<<<<<<< HEAD
-friends mods
-=======
+13. Resolve merge conflict: Open the file containing the conflict and edit: Remove the change you are not happy with and merge conflict indication
+<<<<<<< HEAD            (remove)
+friends mods            (remove) 
+=======                 (remove) 
 your mods
->>>>>>> <commit number>
+>>>>>>> <commit number> (remove)
 
 close file
 
