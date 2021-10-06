@@ -1,0 +1,107 @@
+Tasks for lesson 13 (L13.2)
+################################
+
+Learning goals:
+Repetition
+Update repository history from remote
+Update repository from remote
+
+
+1. Check the status of your repository
+
+git status
+git diff
+git diff master origin/master
+
+
+2. Download the history from remote repository
+
+git fetch
+git status
+git diff
+git diff master origin/master
+
+Once you see the following message, continue to point 3
+
+   "Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+      (use "git pull" to update your local branch)"
+
+
+3. Update your repository with changes from the remote repository (close this file first)
+
+git pull
+git status
+git diff master origin/master
+
+
+4. When you have finished point 3, open this file again for further instructions
+
+==== UPDATED INSTRUCTIONS =======
+
+
+Learning goals:
+Make changes to a specific branch
+
+5. After cooking something nice from your new recipes it's time to make some modifications. Now, everyone should make a change to the recipe in the branch that you downloaded from another participant.
+
+6. First we update all branches with the updates from the master as in last lessons
+
+git branch
+
+Switch to your branch (if you are not already on the correct branch)
+
+git checkout Your_chapter_name
+git branch
+
+git merge master
+
+
+7. Checkout the branch that you will make changes to, i.e. your friend's branch
+
+git checkout <Friends_branch_name>
+
+Make some modification to a recipe, add and commit
+
+git add changed_file
+git commit -m "<Your name> made a change to <Friend_name> recipe"
+
+8. Push the modified file to the remote
+
+git push origin <Friends_branch_name>
+
+
+9. Now check what changes your friend made to your recipe
+
+git checkout <Your_branch>
+git fetch
+git pull origin <Your_branch>
+git log -n 5
+
+
+
+
+Reading
+---------------------------------
+
+https://git-scm.com/docs/git-push
+https://git-scm.com/docs/git-branch
+https://git-scm.com/docs/git-checkout
+https://git-scm.com/docs/git-remote
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
