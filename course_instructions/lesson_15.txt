@@ -1,0 +1,164 @@
+Tasks for lesson 15 (L15.2)
+################################
+
+Learning goals:
+Repetition
+Update repository history from remote
+Update repository from remote
+
+
+1. Check the status of your repository
+
+git status
+git diff
+git diff master origin/master
+
+
+2. Download the history from remote repository
+
+git fetch
+git status
+git diff
+git diff master origin/master
+
+Once you see the following message, continue to point 3
+
+   "Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+      (use "git pull" to update your local branch)"
+
+
+3. Update your repository with changes from the remote repository (close this file first)
+
+git pull
+git status
+git diff master origin/master
+
+
+4. When you have finished point 3, open this file again for further instructions
+
+
+==== UPDATED INSTRUCTIONS =======
+
+
+Learning goals:
+Managing branches
+Stash and pop
+
+5. Your recipe survived the cooking battle and it's time to develop your recipe. First, update your branch so that it is up to date with the master branch (master_sara).
+
+git branch
+git checkout master_sara
+git pull
+
+Switch to your branch 
+
+git checkout <Your_chapter_name>
+git branch
+git merge master_sara
+
+6. Create a "topic branch" based on your chapter branch <Your_chapter_name> where you can experiment with your recipe:
+
+git checkout -b <Your_experiment_chapter_name>
+
+7. Inspect current local and remote branches:
+
+git branch
+git branch -vv
+git remote show origin
+
+8. Check the history of your experimental recipe branch
+
+git log <Your_experiment_chapter_name> --oneline --decorate --graph
+
+and the full repository
+
+git log --oneline --decorate --graph --all
+
+9. Now we start the experiment. Make sure you are on the experimental topic branch:
+
+git branch
+git checkout <Your_experiment_chapter_name>
+
+Create a new file with an experimental recipe. Do not add or commit. Check the status:
+
+git status
+
+10. Switch branch:
+
+git checkout <Your_chapter_name>
+git status
+
+What happened?
+
+11. Switch back to experimental topic branch and add and commit your experimental recipe.
+
+git checkout <Your_experiment_chapter_name>
+git add <experimental_recipe>
+git commit -m "<Name> create <experimental_recipe>"
+
+12. Add a new ingredient to your experimental recipe. Do not add or commit.
+
+13. Swithch branch once more
+
+git checkout <Your_chapter_name>
+git status
+
+What happened?
+
+14. Add the changes you made in <experimental_recipe> in <Your_experiment_chapter_name>
+
+git add <experimental_recipe>
+git status
+
+15. Swithch branch again:
+
+git checkout <Your_chapter_name>
+git status
+
+What happened?
+
+16. The experiment is now finished yet, so it's too early to commit. Let's stash the modifications while going back to the original <Your_chapter_name>
+
+git stash
+git status
+git checkout <Your_chapter_name>
+git status
+
+17. Check your stash
+git stash list 
+git stash show
+
+18. Go back to the experiment and finish up
+
+git checkout <Your_experiment_chapter_name>
+git status
+git stash pop
+git status
+git commit -m "<Name> updated <experimental_recipe> from stash"
+
+19. Push your experimental recipe branch to origin
+
+git push origin <Your_experiment_chapter_name>
+
+
+
+
+Reading
+---------------------------------
+https://git-scm.com/docs/git-stash
+https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
+
+
+
+
+
+
+
+
+
+
+
+
+
