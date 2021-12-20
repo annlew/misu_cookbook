@@ -117,7 +117,7 @@ git status
 
 What happened?
 
-16. The experiment is now finished yet, so it's too early to commit. Let's stash the modifications while going back to the original <Your_chapter_name>
+16. The experiment is not finished yet, so it's too early to commit. Let's stash the modifications while going back to the original <Your_chapter_name>
 
 git stash
 git status
@@ -134,6 +134,7 @@ git checkout <Your_experiment_chapter_name>
 git status
 git stash pop
 git status
+git add <experimental_recipe>
 git commit -m "<Name> updated <experimental_recipe> from stash"
 
 19. Push your experimental recipe branch to origin
