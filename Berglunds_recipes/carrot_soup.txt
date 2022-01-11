@@ -10,7 +10,7 @@
 
 \f1\b0 \ulnone A warming dish in the cold.\
 \
-1 kg 			carrots\
+1.1 kg 			carrots\
 0.5 kg 		parsnip\
 2 Deciliter 		yellow onion\
 1-2			Garlic\
