@@ -1,4 +1,4 @@
-Tasks for lesson 17 (L17.1)
+Tasks for lesson 17 (L17.2)
 ################################
 
 Learning goals:
@@ -35,6 +35,69 @@ git diff master origin/master
 
 
 4. When you have finished point 3, open this file again for further instructions
+
+
+==== UPDATED INSTRUCTIONS =======
+
+
+Learning goals:
+Set upstream branch
+
+
+5. Do the usual routine of updating your chapter branch with updates from master.
+
+
+git branch
+git checkout master_sara
+git pull
+
+Switch to your branch
+
+git checkout <Your_chapter_name>
+git branch
+git merge master_sara
+
+
+6. Now we will look closer at how the chapter interacts with the remote. First check out your chapter branch and the look at the remotes
+
+git checkout <Your_chapter_name>
+
+git remote show origin
+
+Is your chapter branched configured for git pull? Is it configured for git push?
+
+git branch -vv
+
+Does your chapter branch has a corresponding origin/<Your_chapter_name> associated with is?
+
+7. Make a small change to your chapter branch. Stage, commit and push to remote (N.B exactly as written!)
+
+git push origin
+
+What happened?
+
+8. Set an upstream
+
+git push -u origin <Your_branch_name>
+
+9. Check the remotes again
+
+git remote show origin
+git branch -vv
+
+Were there any changes?
+
+10. Push your change again
+
+git push origin
+
+Was the push successfull? 
+
+
+
+https://git-scm.com/docs/git-push
+https://www.git-tower.com/learn/git/faq/set-upstream
+https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches
 
 
 
