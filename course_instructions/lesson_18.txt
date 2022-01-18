@@ -1,4 +1,4 @@
-Tasks for lesson 18 (L18.1)
+Tasks for lesson 18 (L18.2)
 ################################
 
 Learning goals:
@@ -35,4 +35,72 @@ git diff master origin/master
 
 
 4. When you have finished point 3, open this file again for further instructions
+
+
+==== UPDATED INSTRUCTIONS =======
+
+
+Learning goals:
+Set up a fork
+Set up additional remotes
+
+5. The usual update first
+
+git branch
+git checkout master_sara
+git pull
+
+Switch to your branch
+
+git checkout <Your_chapter_name>
+git branch
+git merge master_sara
+
+
+6. We have looked at a lot of recipes so far and now it's time to bring out the fork. Go to this repository's Github page (in web browser):
+
+https://github.com/annlew/misu_cookbook
+
+7. Click the fork button
+(https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository)
+
+You should now have a repository
+
+https://github.com/<your_git_name>/misu_cookbook
+
+
+8. Make a clone of your new fork, e.g.:
+
+git clone https://github.com/<your_git_name>/misu_cookbook.git <my_cookbook_fork>
+
+
+9. Go to your local (cloned) fork and check what branches it includes and the relationship to remotes
+
+git remote show origin
+git remote -v
+git branch -vv
+
+
+10. Set up a connection to the original repository, i.e. add this as an alternative remote repository
+
+git remote add upstream https://github.com/annlew/misu_cookbook
+
+11. Check your remotes and branches again
+
+git remote show origin
+git remote -v
+git branch -vv
+git remote show upstream
+
+
+
+
+
+
+Reading
+---------------------------------
+https://git-scm.com/docs/git-remote
+https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+https://docs.github.com/en/get-started/quickstart/fork-a-repo
+
 
