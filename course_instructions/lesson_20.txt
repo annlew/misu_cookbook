@@ -1,4 +1,4 @@
-Tasks for lesson 20 (L20.1)
+Tasks for lesson 20 (L20.2)
 ################################
 
 Learning goals:
@@ -35,6 +35,82 @@ git diff master origin/master
 
 
 4. When you have finished point 3, open this file again for further instructions
+
+
+==== UPDATED INSTRUCTIONS =======
+
+Learning goals:
+Repetition: Update local and remote fork
+Pull request
+
+5. Surprise! The usual routine... IN CLONE OF ORIGINAL REPOSITORY
+
+git branch
+git checkout master_sara
+git pull
+
+Switch to your branch
+
+git checkout <Your_chapter_name>
+git branch
+git merge master_sara
+
+6. And update the fork: go to your local fork clone again. Update your clone with latest changes from the ORIGINAL repository (upstream), i.e. not your fork.
+
+git branch
+git checkout master_sara
+git pull upstream master_sara
+
+7. Ok, now it's time to mess with a branch. Check out the branch "Risotto"
+
+git branch
+git checkout Risotto
+git pull upstream Risotto
+
+8. Make some change to Risotto, add commit
+
+git add <changed files>
+git commit -m "Sara added a new delicious Risotto"
+
+9. Check the differences
+
+git diff Risotto upstream/Risotto
+git diff Risotto origin/Risotto
+git diff upstream/Risotto origin/Risotto
+
+10. Push your changes to your fork
+
+git push origin Risotto
+
+11. Check the differences
+
+git diff Risotto upstream/Risotto
+git diff Risotto origin/Risotto
+git diff upstream/Risotto origin/Risotto
+
+12. Make a pull request: Go to your fork on GitHub and use the pull request button. More reading e.g. here:
+https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
