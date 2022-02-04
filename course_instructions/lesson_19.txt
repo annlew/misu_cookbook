@@ -69,7 +69,7 @@ git diff upstream/master_sara origin/master_sara
 
 8. Now update your remote fork
 
-git push origin/master_sara
+git push origin master_sara
 
 9. Compare the differences between the different repositories again
 
