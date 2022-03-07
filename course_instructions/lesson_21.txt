@@ -1,4 +1,4 @@
-Tasks for lesson 21 (L21.1)
+Tasks for lesson 21 (L21.2)
 ################################
 
 Learning goals:
@@ -40,13 +40,55 @@ git diff master origin/master
 
 
 
+==== UPDATED INSTRUCTIONS =======
+
+Learning goals:
+Repetition: Update local clones, 
+inspect history
+
+5. Surprise! The usual routine... IN CLONE OF ORIGINAL REPOSITORY
+
+git branch
+git checkout master_sara
+git pull
+
+Switch to your branch
+
+git checkout <Your_chapter_name>
+git branch
+git merge master_sara
+
+6. And update the fork: go to your local fork clone again. Update your clone with latest changes from the ORIGINAL repository (upstream), i.e. not your fork.
+
+git branch
+git checkout master_sara
+git pull upstream master_sara
+
+
+7. Also, update the Risotto branch you worked on previously, from the upstream repository, and check the history 
+
+git checkout Risotto
+git log -n10
+
+Can you see your modifications in the log?
+
+
+8. Now go back to the CLONE OF ORIGINAL REPOSITORY. Switch to your branch:
+
+git checkout <Your_chapter_name>
+git branch
+git merge master_sara
+
+9. Make some improvements to the pasta_tomatosause.txt, add and commit
+
+git add <changed_file>
+git commit -m "Tomato sauce improvements"
 
 
 
-
-
-
-
+Reading
+---------------------------------
+https://coderefinery.github.io/git-collaborative/03-distributed/
 
 
 
