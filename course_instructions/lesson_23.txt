@@ -1,0 +1,59 @@
+Tasks for lesson 23 (L23.1)
+################################
+
+Learning goals:
+Repetition
+Update repository history from remote
+Update repository from remote
+
+
+1. Check the status of your repository
+
+git status
+git diff
+git diff master origin/master
+
+
+2. Download the history from remote repository
+
+git fetch
+git status
+git diff
+git diff master origin/master
+
+Once you see the following message, continue to point 3
+
+   "Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+      (use "git pull" to update your local branch)"
+
+
+3. Update your repository with changes from the remote repository (close this file first)
+
+git pull
+git status
+git diff master origin/master
+
+
+4. When you have finished point 3, open this file again for further instructions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
