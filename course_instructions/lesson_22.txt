@@ -1,4 +1,4 @@
-Tasks for lesson 22 (L22.1)
+Tasks for lesson 22 (L22.2)
 ################################
 
 Learning goals:
@@ -35,6 +35,90 @@ git diff master origin/master
 
 
 4. When you have finished point 3, open this file again for further instructions
+
+
+
+
+==== UPDATED INSTRUCTIONS =======
+
+Learning goals:
+Repetition: solving conflicts
+reset
+HEAD
+
+5. Surprise! The usual routine... IN CLONE OF ORIGINAL REPOSITORY
+
+git branch
+git checkout master_sara
+git pull
+
+6. Switch to your branch
+
+git checkout <Your_chapter_name>
+git branch
+git status
+git log -n3
+git pull origin <Your_chapter_name>
+
+This should give you a merge conflict, which you have to solve manually
+"Automatic merge failed; fix conflicts and then commit the result."
+
+7. Check the status again, and check the difference between origin and local
+
+git status
+git diff <Your_chapter_name> origin/<Your_chapter_name>
+
+8. Open the file that is different in origin/<Your_chapter_name> and edit manually where you find 
+
+++<<<<<<< HEAD
+text
+++=======
+different text
+++>>>>>>> <commit number>
+
+9. Add and commit your changes
+
+git add <changed_file>
+git commit -m "Sara resolved a mess"
+git status
+git log -n3
+
+10. Wait.... Are you really happy with your changes? Let's go back. And think about HEAD again (lesson 8). And HEAD~
+
+git reset HEAD~
+git status
+git diff
+git pull
+git log -n3
+
+What happened?
+
+11. Edit your recipe again, add and commit.
+
+git add <changed_file>
+git commit -m "Sara rescues recipe"
+git status
+git diff origin/<changed_file>
+git log -n3
+
+Are there any differences left?
+
+git pull
+git status
+git log -n3
+
+12. Push your rescued recipe to origin
+git push origin <Your_chapter_name>
+
+
+13. Oh dear.... What's next?
+
+
+Reading
+---------------------------------
+
+https://git-scm.com/docs/git-reset
+https://git-scm.com/book/sv/v2/Git-Tools-Reset-Demystified
 
 
 
