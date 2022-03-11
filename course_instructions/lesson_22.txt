@@ -108,7 +108,7 @@ git status
 git log -n3
 
 12. Push your rescued recipe to origin
-git push origin/<Your_chapter_name>
+git push origin <Your_chapter_name>
 
 
 13. Oh dear.... What's next?

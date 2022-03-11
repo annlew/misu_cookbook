@@ -39,21 +39,81 @@ git diff master origin/master
 
 
 
+==== UPDATED INSTRUCTIONS =======
+
+Learning goals:
+reset
+HEAD
+
+5. Surprise! The usual routine... as usual... IN CLONE OF ORIGINAL REPOSITORY
+
+git branch
+git checkout master_sara
+git pull
 
 
+6. Switch to your branch and merge master_sara into your branch
+
+git checkout <Your_chapter_name>
+git branch
+git status
+git log -n3
+git merge master_sara
+git status
+git log -n3
 
 
+7. Was that a good idea? Perhaps not... Let's go back...
+
+git reset HEAD~
+git status
+git log -n3
+git diff
+
+8. Actually... perhaps it was a good idea after all...
+
+git pull
+git status
+git log -n3
+git diff
+
+9. Well, it wasn't
+
+git reset --merge ORIG_HEAD
+git status
+git log -n3
+git diff
 
 
+10. Sorry, only joking, of course it's a good idea. 
+
+git pull 
+git status
+git log -n3
+git diff
+
+What is the difference between the two methods of reverting the pull/merge?
 
 
+11. Because it's time to merge your chaper into the cookbook! Do you have the latest updates in master_sara?
+
+git checkout master_sara
+git diff master origin/master
+(git pull if there is a difference)
+
+git merge <Your_chapter_name>
 
 
+12. Push the changes to github
+
+git push origin master_sara
 
 
+Reading
+---------------------------------
 
-
-
+https://git-scm.com/docs/git-reset
+https://git-scm.com/book/sv/v2/Git-Tools-Reset-Demystified
 
 
 
