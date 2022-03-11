@@ -72,7 +72,7 @@ git diff
 
 8. Actually... perhaps it was a good idea after all...
 
-git pull
+git merge master_sara 
 git status
 git log -n3
 git diff
@@ -87,7 +87,7 @@ git diff
 
 10. Sorry, only joking, of course it's a good idea. 
 
-git pull 
+git merge master_sara 
 git status
 git log -n3
 git diff
