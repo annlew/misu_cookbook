@@ -1,4 +1,4 @@
-Tasks for lesson 24 (L24.1)
+Tasks for lesson 24 (L24.2)
 ################################
 
 Learning goals:
@@ -37,21 +37,55 @@ git diff master origin/master
 4. When you have finished point 3, open this file again for further instructions
 
 
+==== UPDATED INSTRUCTIONS =======
+
+Learning goals:
+tags
+HEAD
+
+5. We now have a cookbook and want to publish. Just make sure first that everything is up to date on master_sara 
+
+git branch
+git checkout master_sara
+git pull
+
+
+6. To let people know that the current version of the cookbook is worth checking out we will create a tag. Are there any tags already?
+
+git tags 
+
+
+7. Create a tag for the current version of the branch you are on 
+
+git tag -a first_edition -m "a description of your tag"
+git show first_edition
+
+8. Publish the tag
+
+git push origin first_edition
+
+Have a look at the github page. Can you find the tag?
+
+
+9. Checkout the tag. What information do you get about HEAD?
+
+git checkout first_edition
+
+
+10. Read the litterature abouth tags and detached HEAD :o (below)
+
+
+11. Checkout master_sara again.
+
+git checkout master_sara
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+Reading
+---------------------------------
+https://git-scm.com/book/en/v2/Git-Basics-Tagging
+https://git-scm.com/docs/git-tag
+https://www.cloudbees.com/blog/git-detached-head
 
 
 
