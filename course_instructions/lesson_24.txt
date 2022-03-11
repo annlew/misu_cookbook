@@ -70,7 +70,7 @@ Have a look at the github page. Can you find the tag?
 9. Checkout the tag. What information do you get about HEAD?
 
 git checkout first_edition
-
+git describe --tags
 
 10. Read the litterature abouth tags and detached HEAD :o (below)
 
