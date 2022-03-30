@@ -1,4 +1,4 @@
-Tasks for lesson 25 (L25.1)
+Tasks for lesson 25 (L25.2)
 ################################
 
 Learning goals:
@@ -39,6 +39,31 @@ git diff master origin/master
 
 
 
+
+==== UPDATED INSTRUCTIONS =======
+
+Learning goals:
+make a new repository
+
+
+5. We have a first version of our cook book. It's time to start a new book manuscript. Create a folder outside this repository where your new book will be stored. Create a new repository for your new book.
+
+mkdir /your/new/cook/book
+cd /your/new/cook/book
+git git init
+
+6. Connect your new repository to GitHub using git (see instructions below)
+
+7. Announce your new cook book project to the cook book author community (i.e. Anna) 
+
+8. Write a lot of new recipes
+
+Reading
+---------------------------------
+
+https://git-scm.com/docs/git-init
+https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
+https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github
 
 
 
