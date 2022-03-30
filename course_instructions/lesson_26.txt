@@ -40,12 +40,44 @@ git diff master origin/master
 
 
 
+==== UPDATED INSTRUCTIONS =======
+
+Learning goals:
+Repetition: branches and merging
 
 
+5. Finally, we have published a book and working away on the follow up. Do you have all the skills to complete your next book? Have a look at the Curriculum of the course. Make a new branch in the misu_cookbook where you add a file answering these qustions:
+
+a. Have the course covered all the topics you expected?
+b. Is there any topic you missed in the course?
+c. Are there any topics that should be given more time?
+d. Any topics that we should spend less time on?
+e. Is there anyting you feel is a complete mystery out of the topics we have covered?
+f. Have you become more fluent with git compared to before the course started?
+g. Other comments? (Not related to time :p)
+
+====Purpose=====
+Learn basic skills necessary for practical work with version controlled code in collaboration with
+other code developers, building fluency with git/version control.
+Learn basic skills for how to set up and manage a version controlled code repository.
+===Curriculum===
+Teaching topics and expected time
+Download code from a public repository (1.6h)
+Make version controlled changes to their code (2h)
+Download updates to the code (2h)
+Download updates to the code without overwriting local changes (2h)
+Upload changes to the repository (2h)
+Inspect history (3h)
+Revert changes (3h)
+Create a branch (3h)
+Merge a branch (3h)
+Resolve conflicts (3h)
+Make your own private git repository (2h)
 
 
+6. Merge this course evaluation branch into the master_sara branch and push to GitHub
 
-
+7. You are done. Thank you for participating!
 
 
 
